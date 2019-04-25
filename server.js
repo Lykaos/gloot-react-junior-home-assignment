@@ -29,10 +29,10 @@ app.listen(3000, () =>
 
 /* The mock 'database' */
 let games = [
-  { id: '23TplPdS', name: 'Dwarf Fortress' },
-  { id: '46Juzcyx', name: 'The Sims 2' },
-  { id: '2WEKaVNO', name: 'Elasto Mania' },
-  { id: 'nYrnfYEv', name: 'Team Fortress 2' },
+  { id: '23TplPdS', name: 'Dwarf Fortress', url: 'https://steamcdn-a.akamaihd.net/steam/apps/975370/extras/small_entrance.png?t=1552488361'},
+  { id: '46Juzcyx', name: 'The Sims 2', url: 'http://ban-game-3.gamewise.co/the-sims-2_banner71-53444-full.jpeg' },
+  { id: '2WEKaVNO', name: 'Elasto Mania', url: 'http://www.czechgamer.com/pics/clanky/19795_maxresdefault.jpg'},
+  { id: 'nYrnfYEv', name: 'Team Fortress 2', url: 'https://cdn.mmos.com/wp-content/uploads/2017/01/tf2-gambling-news-banner.jpg' },
 ];
 
 /* IMPLEMENTATION DETAILS */
@@ -64,10 +64,11 @@ function getGame(req, res) {
  * Body: { "name": "Fresh Prince" } */
 function addGame(req, res) {
   const name = req.body.name;
+  var url = req.body.url;
   if (!name) {
     return res.status(401).end();
   }
-  const newGame = { id: shortid.generate(), name };
+  const newGame = { id: shortid.generate(), name, url: (url === undefined || url === '') ? "https://finalkill.com/wp-content/uploads/2019/03/gloot.png" : url};
   games = [...games, newGame];
   return res
     .status(201)
@@ -93,10 +94,16 @@ function deleteGame(req, res) {
 function editGame(req, res) {
   const id = req.params.id;
   const name = req.body.name;
+  var url = req.body.url;
+  console.log(url)
+  if (url === undefined || url === '')
+  {
+    url = "https://finalkill.com/wp-content/uploads/2019/03/gloot.png";
+  }
   if (!name || !id) {
     return res.status(400).end();
   }
-  games = games.map(g => (g.id == id ? { ...g, name } : g));
+  games = games.map(g => (g.id == id ? { ...g, name, url } : g));
   return res
     .status(200)
     .json(games.find(g => g.id == id))
