@@ -5,142 +5,142 @@
 
 body
 {
-	margin: 0;
+    margin: 0;
 }
 
 #header
 {
-	position: fixed;
-	top: 0;
-	width: 90vw;
-	border-bottom: 5px solid #01e572;
-	padding: 5vh 5vw 5vh 5vw;
-	background-color: #141414;
-	z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 90vw;
+    border-bottom: 5px solid #01e572;
+    padding: 5vh 5vw 5vh 5vw;
+    background-color: #141414;
+    z-index: 1;
 }
 
 #title
 {
-	color: #01e572;
-	font-family: 'Audiowide';
-	font-size: 6vh;
+    color: #01e572;
+    font-family: 'Audiowide';
+    font-size: 6vh;
 }
 
 .inputField
 {
-	float:right;
-	height: 5vh;
-	border: 3px solid #01e572;
-	padding-left: 1vh;
-	margin-top: 1vh;
-	margin-right: 5vh;
-	font-size: 3vh;
-	font-family: 'Open Sans';
+    float:right;
+    height: 5vh;
+    border: 3px solid #01e572;
+    padding-left: 1vh;
+    margin-top: 1vh;
+    margin-right: 5vh;
+    font-size: 3vh;
+    font-family: 'Open Sans';
 }
 
 #addGameButton
 {
-	font-size: 6vh;
-	width: 6vw;
-	font-family: 'Audiowide';
-	background-color: #01e572;
-	border-top: 1px solid #2c582b;
-	border-left: 1px solid #2c582b;
-	border-right: 5px solid #2c582b;
-	border-bottom: 5px solid #2c582b;
-	float: right;
-	outline: 0;
+    font-size: 6vh;
+    width: 6vw;
+    font-family: 'Audiowide';
+    background-color: #01e572;
+    border-top: 1px solid #2c582b;
+    border-left: 1px solid #2c582b;
+    border-right: 5px solid #2c582b;
+    border-bottom: 5px solid #2c582b;
+    float: right;
+    outline: 0;
 }	
 
 #addGameButton:hover
 {
-	background-color: #06ca68;
+    background-color: #06ca68;
 }
 
 #addGameButton:active
 {
-	border-top: 5px solid #2c582b;
-	border-left: 5px solid #2c582b;
-	border-right: 1px solid #2c582b;
-	border-bottom: 1px solid #2c582b;
+    border-top: 5px solid #2c582b;
+    border-left: 5px solid #2c582b;
+    border-right: 1px solid #2c582b;
+    border-bottom: 1px solid #2c582b;
 }
 
 #content
 {
-	margin-top: 25vh;
-	margin-left: 25vw;
-	margin-right: 25vw;
+    margin-top: 25vh;
+    margin-left: 25vw;
+    margin-right: 25vw;
 }
 
 .itemList
 {
-	height: 16vh;
-	border: 3px solid #01e572;
-	padding-left: 1vh;
-	margin-bottom: 5vh;
+    height: 16vh;
+    border: 3px solid #01e572;
+    padding-left: 1vh;
+    margin-bottom: 5vh;
 }
 
 .editButton, .deleteButton
 {
-	float: right;
-	width: 12vh;
-	height: 6vh;
-	color: white;
-	margin-top: 5vh;
-	margin-right: 3vh;
-	font-family: 'Open Sans';
-	font-weight: bold;
-	outline: 0;
+    float: right;
+    width: 12vh;
+    height: 6vh;
+    color: white;
+    margin-top: 5vh;
+    margin-right: 3vh;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    outline: 0;
 }
 
 .editButton
 {
-	background-color: #6082b4;
-	border-top: 1px solid #36356e;
-	border-left: 1px solid #36356e;
-	border-right: 5px solid #36356e;
-	border-bottom: 5px solid #36356e;
+    background-color: #6082b4;
+    border-top: 1px solid #36356e;
+    border-left: 1px solid #36356e;
+    border-right: 5px solid #36356e;
+    border-bottom: 5px solid #36356e;
 }
 
 .deleteButton
 {
-	background-color: red;
-	border-top: 1px solid #680303;
-	border-left: 1px solid #680303;
-	border-right: 5px solid #680303;
-	border-bottom: 5px solid #680303;
+    background-color: red;
+    border-top: 1px solid #680303;
+    border-left: 1px solid #680303;
+    border-right: 5px solid #680303;
+    border-bottom: 5px solid #680303;
 }
 
 .editButton:hover
 {
-	background-color: #495cb3;
+    background-color: #495cb3;
 }
 
 .deleteButton:hover
 {
-	background-color: #c50909;
+    background-color: #c50909;
 }
 
 .editButton:active
 {
-	border-top: 5px solid #36356e;
-	border-left: 5px solid #36356e;
-	border-right: 1px solid #36356e;
-	border-bottom: 1px solid #36356e;
+    border-top: 5px solid #36356e;
+    border-left: 5px solid #36356e;
+    border-right: 1px solid #36356e;
+    border-bottom: 1px solid #36356e;
 }
 
 .deleteButton:active
 {
-	border-top: 5px solid #680303;
-	border-left: 5px solid #680303;
-	border-right: 1px solid #680303;
-	border-bottom: 1px solid #680303;
+    border-top: 5px solid #680303;
+    border-left: 5px solid #680303;
+    border-right: 1px solid #680303;
+    border-bottom: 1px solid #680303;
 }
 
 .gameLabel
 {	
-	color: white;
-	font-size: 3.5vh;
-	font-family: 'Sigmar One';
-	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    color: white;
+    font-size: 3.5vh;
+    font-family: 'Sigmar One';
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
